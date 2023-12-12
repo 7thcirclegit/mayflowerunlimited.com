@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} mayflowerunlimited\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://mayflowerunlimited.com/$1 [R,L]
+
+
+
+RewriteOptions inherit
+
+RewriteEngine on
+
+### php handler provided by phpupgrader ###
+# AddHandler application/x-httpd-ea-php70 .php
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php80” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php80___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
