@@ -1,6 +1,0 @@
-
-RewriteEngine on
-
-
-### php handler provided by phpupgrader ###
-AddHandler application/x-httpd-php70 .php
